@@ -1,0 +1,158 @@
+/* 전체 구역 div */
+* {
+	font-family:'Noto Sans KR', sans-serif;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+object {
+	width: 100%;
+	height: 100px;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.container {
+	position: relative;
+	height: 100%;
+	margin: 0 auto;
+	max-width: 1200px;
+}
+
+/* 지도 영역 */
+.map-div {
+	margin: 0 auto;
+	width: 600px;
+	height: 350px;
+	border: 2px solid #a0a0a0;
+	border-radius: 4px;
+	background-image: url('../img/gwangju_map.png');
+	background-size: 100% 100%;
+}
+
+.map-div>img {
+    width: 100%;
+    height: 100%;
+    
+}
+
+.gu-btn {
+	position: absolute;
+	z-index: 1;
+    width: 90px;
+    height: 40px;
+    text-align: center;
+}
+
+#gwangsan {
+	top: 144px;
+	left: calc(50% - 170px);
+}
+
+#seogu {
+	top: 185px;
+	left: calc(50% - 10px);
+}
+
+#namgu {
+	top: 250px;
+	left: calc(50% + 10px);
+}
+
+#donggu {
+	top: 235px;
+	left: calc(50% + 140px);
+}
+
+#bukgu {
+	top: 60px;
+	left: calc(50% + 60px);
+}
+
+
+
+/* 중앙 하단 리스트 영역 */
+.content {
+	margin: 20px auto;
+}
+
+.btn-list {
+	margin: 0 auto;
+	align-items: center;
+	text-align: center;
+}
+
+/* 볼거리 먹거리 버튼 영역 */
+.btn-list input {
+	width: 300px;
+	height: 60px;
+	margin: 0 20px; 
+	background-color : #F0EEFA;
+	color: black;
+	border: 0 none;
+	font-size: 20px;
+	font-weight: bold;
+	background-color: #F0EEFA;
+	border-radius: 10px;
+}
+
+.btn-list input:hover {
+	background-color: #b4aee8;
+	color: white;
+}
+
+.list-item {
+	border: 1px solid #a0a0a0;
+    border-radius: 3px;
+    width: 700px;
+    height: 200px;
+    margin: 10px auto
+}
+
+.list-img {
+	width: 200px;
+    height: 200px;
+    float: left;
+}
+.list-img img {
+	width: 200px;
+    height: 200px;
+}
+
+.list-info {
+	margin: 10px 20px;
+    width: 450px;
+    float: left;
+}
+
+/* 위로/아래로 버튼 영역 */
+.up_or_down {
+	float: right;
+	width: 100px;
+	height: 60px;
+	border: 1px solid #3f3f3f;
+	text-align: center;
+	margin: 3px;
+	border-radius: 10px;
+	position: fixed;
+	left: calc(100% - 150px);
+	bottom: 150px;
+}
+
+.up_or_down > input[type="button"] {
+	border: 0;
+	background-color: #ffffff;
+}
+
+.up_or_down input {
+	width: 60px;
+	height: 30px;
+}
+
+.hide {
+	display: none;
+}
