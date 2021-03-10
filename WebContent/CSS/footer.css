@@ -10,7 +10,7 @@
 	height: 100px;
 	line-height: 100px;
 }
-p {
+.footer > p {
 	color: #f0eefa;
 	text-align: center;
 	height: 30px;

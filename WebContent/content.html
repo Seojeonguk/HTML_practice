@@ -2,16 +2,23 @@
 <html>
 <head>
 	<meta charset="UTF-8">
+	<title>광주랑 나들이</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-		<script src="./JS/content.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script src="./JS/content.js"></script>
 	<link rel="stylesheet" href="./CSS/content.css"/>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="icon" type="image/png" sizes="16x16" href="./img/favicon.png">
 	<link href="https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </head>
 <body>
-	<object type="text/html" data="header.html"></object>
+	<div id="header"></div>
+	<!-- <object type="text/html" data="header.html"></object> -->
 	<div class="container">
 		<div class="map-div">
 			<div class="gu-btn" id="gwangsan"></div>
@@ -33,11 +40,13 @@
 			</div>
 		</div>
 
-		<div class="up_or_down">
-			<input type="button" id="up" value="맨 위로"/>
-			<input type="button" id="down" value="맨 아래로"/>
+		<div id="floatMenu">
+			<a href="#header" id="up"><div id="page_up"></div></a>
+			<a href="javascript:location.reload();" id="home_btn"><div id="home"></div></a>
+			<a href="#footer" id="down"><div id="page_down"></div></a>
 		</div>
 	</div>
-	<object type="text/html" data="footer.html"></object>
+	<!-- <object type="text/html" data="footer.html"></object> -->
+	<div id="footer"></div>
 </body>
 </html>

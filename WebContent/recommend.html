@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>광주랑 나들이</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="./JS/content.js"></script>
+<link rel="stylesheet" href="./CSS/recommend.css"/>
+<link rel="icon" type="image/png" sizes="16x16" href="./img/favicon.png">
+<link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div id="header"></div>
+
+<!-- 중앙 content -->
+<div class="container">
+	<h2 class="title">추천하기</h2>
+	<div class="container border rounded p-3 px-4" style="border-color: lightgray;" >
+		<form action="/action_page.php">
+		  <div class="form-group">
+		    <label for="name">가게명</label>
+		    <input type="text" class="form-control" placeholder="가게명" id="name">
+		  </div>
+		  <div class="form-group">
+		    <label for="address">주소</label>
+		    <input type="text" class="form-control" placeholder="주소" id="addr">
+		  </div>
+		  <div class="form-group">
+		    <label for="picture">사진 첨부</label>
+		    <input type="file" class="form-control-file border">
+		  </div>
+			<!-- 별점 -->
+		<div class="form-group">
+		    <label for="address">나의 별점</label>
+		  <div>
+		  <div class="form-check-inline">
+		  <label class="form-check-label">
+		    <input type="radio" class="form-check-input" name="optradio">1점
+		  </label>
+			</div>
+		  <div class="form-check-inline">
+			  <label class="form-check-label">
+			    <input type="radio" class="form-check-input" name="optradio">2점
+			  </label>
+		   </div>
+		  <div class="form-check-inline">
+			  <label class="form-check-label">
+			    <input type="radio" class="form-check-input" name="optradio">3점
+			  </label>
+		   </div>
+		  <div class="form-check-inline">
+			  <label class="form-check-label">
+			    <input type="radio" class="form-check-input" name="optradio">4점
+			  </label>
+		   </div>
+		  <div class="form-check-inline">
+			  <label class="form-check-label">
+			    <input type="radio" class="form-check-input" name="optradio">5점
+			  </label>
+			  </div>
+		   </div>
+		   </div>
+		   
+		  <div class="form-group">
+			<label for="comment">추천이유: </label>
+			<textarea class="form-control" rows="5" id="comment"></textarea>
+		  </div>
+		  <button type="submit" class="btn btn-block btn-recom">보내기</button>
+		</form>
+</div>
+</div>
+</body>
+</html>

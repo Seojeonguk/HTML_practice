@@ -3,24 +3,36 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>광주랑 나들이</title>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 	<script src="./JS/header.js"></script>
 	<link rel="stylesheet" href="./CSS/header.css"/>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="icon" type="image/png" sizes="16x16" href="./img/favicon.png">
 	<link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
-
-	<div class="header">
-		<div class="header-title">
-			<span id="logo"><a href="#" onclick="location.reload()">SSAFY</a></span>
-		</div>
-
-		<div class="menu">
-			<div class="menu-item">item1</div>
-			<div class="menu-item">item2</div>
-		</div>
-	</div>
 	
+	<nav class="header navbar navbar-expand-lg navbar-light fixed-top shadow" style="margin-bottom:10px">
+	  <a class="navbar-brand" id="logo" href="index.html"><img src="./img/logo.png"></a>
+	  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+	
+	  <div class="collapse navbar-collapse" id="navb">
+	    <ul class="navbar-nav ml-auto">
+	      <li class="nav-item">
+	        <a class="nav-link nav-menu" href="content.html">전체보기</a>
+	      </li>
+	      <li class="nav-item nav-menu">
+	        <a class="nav-link nav-menu" href="recommend.html">추천하기</a>
+	      </li>
+	    </ul>
+	  </div>
+	</nav>
 </body>
 </html>

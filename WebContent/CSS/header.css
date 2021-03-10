@@ -1,5 +1,6 @@
 /* 전체 헤더 영역*/
 * {
+	font-family:'Noto Sans KR', sans-serif;
   	margin: 0;
   	padding: 0;
   	list-style: none;
@@ -40,6 +41,9 @@ a {
 	margin: 10px;  	
 }
 /* 상단 메뉴 영역 */
+.nav-menu {
+	font-family: 'Jua', sans-serif;
+}
 .menu {
 	display: flex;
 	float: right;
